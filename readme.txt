@@ -35,4 +35,16 @@ Clase #5
 - Volver en el tiempo y eliminar todo hasta el commit elegido: $ git reset <numero del commit> --hard
 - Volver en el tiempo con git checkout: $ git checkout <numero del commit o tag>
 - Volver a los ultimos cambios: $ git checkout master
-- Sacar los archivos del Staging: $ Git reset HEAD /o/ $ git restore --staged readme.txt  
+- Sacar los archivos del Staging: $ Git reset HEAD /o/ $ git restore --staged readme.txt
+
+Clase #6 
+* Flujo de trabajo básico con un repositorio remoto
+
+- Algunos comandos utiles 
+    * Te muestra el id commit y el título del commit. $ git log --oneline
+    * Te muestra donde se encuentra el head point en el log. $ git log --decorate
+    * Muestra los cambios brevemente: git log --stat
+    * Muestra los cambios en las lineas de los archivos que se hicieron en determinado commit: git log -p-
+    * Muestra los cambios que ha realizado determinado usuario: $ git shortlog 
+    * Muestra el tag y los mensajes del los commits: git log --graph --oneline --decorate
+    * Muestra los commits donde se le han hecho cambios a determinado archivo: $ git log index.html
