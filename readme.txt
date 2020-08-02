@@ -26,5 +26,5 @@ Clase #4
 - Quitar del stagign: $ git rm --cached <nombre del archivo>
 - Crear el primer Commit: $ git commit -m "Mensaje del commit"
 - Mover o renombrar un archivo: git mv <-f> ... <archivo> <archivo renombrado>
-- Mover o renombrar un archivo: git mv <-f> ... <archivo> <archivo renombrado>
+- Mover o renombrar un archivo: git mv <-f> ... <archivo> <archivo renombrado> ej ($ git mv -f movimiento.txt test.txt)
 
