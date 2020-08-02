@@ -63,3 +63,9 @@ Clase #7
 
 Clase #8 
 * Uso de GitHub
+
+- Crear un repositorio en GitHub
+- Añadir un origen remoto: $ git remote add origin <link del repositorio en GitHub>
+- Enviar todos los cambios al repositorio remoto: git push origin master
+- Traer los cambios del origen remoto: git pull origin master
+- Fusionar cambios del origen remoto y local: git pull origin master --allow-unrelated-histories
