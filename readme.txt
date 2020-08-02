@@ -59,3 +59,7 @@ Clase #7
 - Me muestra en que lugar estoy y que cambios se hicieron: $ git show
 - Crear una rama: $ git branch <rama1> o nombre de la rama que queramos Crear
 - Moverse a una rama: $ git checkout <nombre de la rama>
+
+
+Clase #8 
+* Uso de GitHub
