@@ -56,3 +56,6 @@ Clase #7
 
 - Introducción a GNU nano 
 - Salir de NANO: F2
+- Me muestra en que lugar estoy y que cambios se hicieron: $ git show
+- Crear una rama: $ git branch <rama1> o nombre de la rama que queramos Crear
+- Moverse a una rama: $ git checkout <nombre de la rama>
