@@ -32,5 +32,7 @@ Clase #4
 Clase #5 
 * Volver en el tiempo en nuestro repositorio
 
-- Volver en el tiempo y eliminar todo hasta el commit elegido: git reset <numero del commit> --hard
--
+- Volver en el tiempo y eliminar todo hasta el commit elegido: $ git reset <numero del commit> --hard
+- Volver en el tiempo con git checkout: $ git checkout <numero del commit o tag>
+- Volver a los ultimos cambios: $ git checkout master
+- Sacar los archivos del Staging: $ Git reset HEAD /o/ $ git restore --staged readme.txt  
