@@ -21,5 +21,10 @@ Clase #4
 * Crear un repositorio
 
 - Iniciar git: $ git init
-- añadir al stagin: $ git add
+- Añadir al stagign: $ git add <nombre del archivo>
+- Añadir al stagign: $ git add . Todos los archivos
+- Quitar del stagign: $ git rm --cached <nombre del archivo>
+- Crear el primer Commit: $ git commit -m "Mensaje del commit"
+- Mover o renombrar un archivo: git mv <-f> ... <archivo> <archivo renombrado>
+- Mover o renombrar un archivo: git mv <-f> ... <archivo> <archivo renombrado>
 
