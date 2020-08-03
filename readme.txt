@@ -80,3 +80,7 @@ Clase #9
 - ssh-add ~/.ssh/id.rsa
 - colocar la llave publica en GitHub
 - cambiar el origen en git repolocal: $ git remote set-url origin 
+
+clase #10 
+*Flujo de trabajo
+-Traer ramas: $git pull origin <nombre de rama> 
