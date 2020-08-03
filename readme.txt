@@ -69,3 +69,14 @@ Clase #8
 - Enviar todos los cambios al repositorio remoto: git push origin master
 - Traer los cambios del origen remoto: git pull origin master
 - Fusionar cambios del origen remoto y local: git pull origin master --allow-unrelated-histories
+
+Clase #9 
+* Crear llave SSH
+
+- Comando para crear llave: $ ssh-keygen -t rsa -b 4096 -C "correoElectronico"
+- Verificar que el servicio de ssh esta corriendo en la máquina: $ eval $(ssh-agent -s)
+- Agregar la llave a ese servicio ~
+                                -- el simbolo ~ es solo un atajo al home o directorio raíz  
+- ssh-add ~/.ssh/id.rsa
+- colocar la llave publica en GitHub
+- cambiar el origen en git repolocal: $ git remote set-url origin 
