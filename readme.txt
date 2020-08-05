@@ -57,6 +57,7 @@ Clase #7
 - Introducción a GNU nano 
 - Salir de NANO: F2
 - Me muestra en que lugar estoy y que cambios se hicieron: $ git show
+- Borrar una rama git branch -D <nombre de la rama>
 - Crear una rama: $ git branch <rama1> o nombre de la rama que queramos Crear
 - Moverse a una rama: $ git checkout <nombre de la rama>
 
@@ -84,3 +85,61 @@ Clase #9
 clase #10 
 *Flujo de trabajo
 -Traer ramas: $git pull origin <nombre de rama> 
+
+clase #11
+*Git Rebase: reorganizando el trabajo realizado
+
+rebase solo para repos locales
+
+Git stash guardar cambios 
+git stash pop para  tomar en cuenta los cambios que he hecho 
+git stash drop para no tomar en cuenta los cambios que he hecho 
+
+Git clean 
+
+* Prueba y muestra los archivos que va a borrar
+git clean --dry-run 
+
+* git clean -f  
+Elimina todo los archivos que no estan trackeados 
+
+
+* Git Cherry-pick 
+TRAE UN COMMIT DE OTRA RAMA 
+
+* GIT AMEND 
+* añadir cambios al commit anterior 
+    git commit --amend
+
+
+* Git reset y reflog solo caso de emergencia 
+
+git reflog / muestra todos los heads de algun momento 
+
+encuentras el HEAD@{1} al que quieras volver " git reset --HARD tag del commit"
+
+¿Qué pasa cuando todo se rompe y no sabemos qué está pasando? Con git reset HashDelHEAD nos devolveremos al estado en que el proyecto funcionaba.
+
+git reset --soft HashDelHEAD te mantiene lo que tengas en staging ahí.
+git reset --hard HashDelHEAD resetea absolutamente todo incluyendo lo que tengas en staging.
+git reset es una mala práctica, no deberías usarlo en ningún momento; debe ser nuestro último recurso.
+
+
+git grep para buscar palabras repetidas 
+
+git grep <palabra> / encuentra la palabra 
+git grep -n <palabra> / encuentra la palabra con la linea donde está
+git grep -c <palabra> / cuenta la cantidad de veces que está escrita 
+
+buscar en los commits / git log -S <palabra>
+
+Comandos recursivos 
+
+git shortlog -sn = muestra cuantos commit han hecho cada miembros del equipo.
+git shortlog -sn --all = muestra cuantos commit han hecho cada miembros del equipo hasta los que han sido eliminado
+git shortlog -sn --all --no-merge = muestra cuantos commit han hecho cada miembros quitando los eliminados sin los merges
+git blame ARCHIVO = muestra quien hizo cada cosa linea por linea
+git COMANDO --help = muestra como funciona el comando.
+git blame ARCHIVO -Llinea_inicial,linea_final= muestra quien hizo cada cosa linea por linea indicándole desde que linea ver ejemplo -L35,50
+**git branch -r **= se muestran todas las ramas remotas
+git branch -a = se muestran todas las ramas tanto locales como remotas
